@@ -1,0 +1,31 @@
+
+
+@mixin box(){
+    @include boxShadow();
+    @include linearGradient($primary, $danger);
+}
+
+@mixin circle(){
+    @include round();
+    @include boxShadow();
+    @include linearGradient($active, $sobber);
+}
+
+@mixin round() {
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+@mixin boxShadow() {
+    box-shadow: 0 50px 10px #555;
+    -webkit-box-shadow: 0 5px 10px #555;
+    -moz-box-shadow: 0 5px 10px #555;
+}
+
+@mixin  linearGradient($color1, $color2){
+    background: linear-gradient($color1, $color2);
+    background: -webkit-linear-gradient($color1, $color2);
+    background: -moz-linear-gradient($color1, $color2);
+    background: -o-linear-gradient($color1, $color2);
+}

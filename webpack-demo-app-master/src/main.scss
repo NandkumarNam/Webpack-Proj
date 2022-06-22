@@ -1,0 +1,14 @@
+//variable
+@import "./sass/variables/variables";
+
+//global mixin
+@import "./sass/mixin";
+
+//Directory
+@import "./sass/plugins/plugins-dir";
+@import "./sass/base/base-dir";
+@import "./sass/layouts/layouts-dir";
+@import "./sass/modules/modules-dir";
+
+//Library
+@import "~bootstrap/scss/bootstrap";
